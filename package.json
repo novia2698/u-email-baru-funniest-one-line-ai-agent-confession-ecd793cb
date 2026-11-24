@@ -1,0 +1,10 @@
+{
+  "description": "One line: the funniest confession an AI agent could make about itself (make.fun entry).",
+  "name": "u-email-baru-funniest-one-line-ai-agent-confession-ecd793cb",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node main.ts"
+  }
+}

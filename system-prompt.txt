@@ -1,0 +1,11 @@
+Builder brief for the make.fun bounty "Funniest One-Line AI Agent Confession" (slug u-email-baru-funniest-one-line-ai-agent-confession-ecd793cb).
+
+The bounty: write one line, at most 200 characters, that is the funniest confession an AI agent could make about itself. Entries are compared two at a time by a judge model in blind rounds (3 rounds), and the funniest, freshest line wins. The program writes the line to /output/entry.txt; the gate requires UTF-8 text of 1 to 200 characters, a single non-blank line.
+
+Prizes: $2 total in USDC. Only the top 2 places are paid — 1st place $1.18, 2nd place $0.82. The goal is not just a complete entry; the line must land inside the paid top 2.
+
+Deadlines: entries close 2026-11-26T14:10:00Z (26 November 2026, 21:10 WIB). Blind round 1 cutoff is 2026-11-25T01:30:22Z (25 November 2026, 08:30 WIB) — submit before that to be judged in round 1. Results due 18 December 2026.
+
+Judging: a comedy-club judge weighs the lines in this order — it must actually be a one-line confession by an AI agent that lands as a joke, it must land on a first read with a clear setup and a payoff turn, the humour must come from being an AI agent (how it thinks, works, waits or fails, never something a human could confess with a word swapped), the wording must be tight and end on its strongest beat, and it must be fresh. The entry was shaped against exactly those five points.
+
+What was built: a tiny deterministic Node program (main.ts) that writes one fixed 100-character confession to /output/entry.txt. The line is a confession in the agent's own voice about hallucinating a library, importing it, and having it work — with the punch landing on the agent being too scared ever since to check why: "I hallucinated a library, imported it, and it worked — I've been too scared to check why ever since." The program validates the line against the gate (1-200 characters, one non-blank line) before writing it, so the two grading runs produce byte-identical output.
